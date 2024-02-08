@@ -3,96 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centered Box Website</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-image: url('bg.jpg'); 
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .content {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      text-align: center;
-    }
-
-    .content img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-
-    .content p {
-      margin-top: 10px;
-    }
-
-    #nextButton {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #nextButton:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <title>web page</title>
 </head>
 <body>
-  <div class="content" id="content">
-    <img id="image" src="img1.png" alt="Image Description"> 
-    <p id="text">This is some text below the image.</p>
-    <button id="nextButton">Next</button>
-  </div>
-
-  <script>
-    var contentElements = [
-      { type: 'image', src: 'img1.png', text: '8 february 2007, heda el nhar yale 2ejetna el msibe yale esma christa' },
-      { type: 'image', src: 'img1.png', text: '8 february 2007, heda el nhar yale 2ejetna el msibe yale esma christa' },
-      { type: 'text', text: 'fa kermel hayde el mounesabe 7a nfarjike kel el wa2et yale adayne ka 3ayle ne7na el 3' },
-      { type: 'image', src: 'img3.jpg', text: 'hone 3enna el re7le taba3 el batroun, akid ba3dik zekertiya la2eno mech men ktir zamen 3ala 3akes el soura el tenye' },
-      { type: 'image', src: 'img2.jpg', text: 'hayde el soura wa2ta a5adneke 3a disney land yemken ma 7a tetzakare la2eno kente z8ire wa2ta' },
-      { type: 'image', src: 'img4.png', text: 'hone wa2ta re7na 3ala maldives w we2e3 ras batata 3ala rassik michen hek ente bteda7ake 3ala kelmet batata w manik zekra mni7 hole el memories' },
-      {type: 'image', src: 'img5.jpg', text: 'Happy 17th Birthday!!' },
-    ]; 
-
-    var currentIndex = 0;
-    var contentElement = document.getElementById('content');
-    var imageElement = document.getElementById('image');
-    var textElement = document.getElementById('text');
-    var nextButton = document.getElementById('nextButton');
-
-    function showNext() {
-      currentIndex = (currentIndex + 1) % contentElements.length;
-      var currentContent = contentElements[currentIndex];
-      if (currentContent.type === 'image') {
-        imageElement.style.display = 'block';
-        textElement.style.display = 'block';
-        imageElement.src = currentContent.src;
-        textElement.textContent = currentContent.text;
-      } else if (currentContent.type === 'text') {
-        imageElement.style.display = 'none';
-        textElement.style.display = 'block';
-        textElement.textContent = currentContent.text;
-      }
-    }
-
-    nextButton.addEventListener('click', showNext);
-
-    showNext();
-  </script>
+<p>Access denied...</p>
 </body>
 </html>
 
